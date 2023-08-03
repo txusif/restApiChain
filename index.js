@@ -6,9 +6,9 @@ app.get("/:docId", (req, res) => {
   const docId = req.params.docId;
   const docList = ["a", "b", "c"];
   if (docList.includes(docId)) {
-    res.send({ res: "100" });
+    res.send({ res: 100 });
   } else {
-    res.send({ res: "0" });
+    res.send({ res: 0 });
   }
 });
 
